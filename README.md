@@ -28,9 +28,9 @@ Tenho habilidades em desenvolvimento Full Stack, com um pouco mais de prática n
 
 | Projeto          | Descrição                                   | Tecnologias                    |
 |------------------|---------------------------------------------|--------------------------------|
-| [Projeto A]([https://github.com/seu-usuario/projeto-a](https://github.com/J-Edu-Cardoso/DC_Eventosvs2.0.0)) | Aplicação web simples que resolve [descrição do problema] | Angular, Node.js, SQLite            |
-| [Projeto B](https://github.com/seu-usuario/projeto-b) | Sistema de gestão para [descrição]                        | HTML, CSS, JavaScript          |
-| [Projeto C](https://github.com/seu-usuario/projeto-c) | Ferramenta para automatizar [tarefa específica]           | Python, SQL                    |
+| [Projeto DCEventos](https://github.com/J-Edu-Cardoso/DC_Eventosvs2.0.0) | Aplicação web [Agenda de eventos ou Rede Social para divulgações de palestras e bootCamps] | Angular 12, Node.js, SQLite            |
+| [Projeto LookHostels](https://github.com/J-Edu-Cardoso/LookHostels) | Catálogo de Hostels e Hospedagens Reservas, etc. [descrição]                        | HTML 50,9%, JavaScript 27,7%, CSS 18,6%, C# 2,8%          |
+| [Projeto Cotação de Moedas](https://github.com/J-Edu-Cardoso/taxa-cambio-master)  | Ferramenta para automatizar [Taxas de Cambio] | Python, PHP, SQL                    |
 
 ---
 
