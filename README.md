@@ -4,8 +4,9 @@
 
 Sou estudante entusiasta de tecnologia e desenvolvimento de software, com foco em Full Stack e uma boa base em SQL e Python. Gosto de aprender e aplicar novas tecnologias para criar soluções que simplificam a vida das pessoas e proporcionam uma ótima experiência de usuário. Fique à vontade para explorar meus projetos e ver o que estou a construir!
 
-[![Linkedin Badge](https://img.shields.io/badge/-SeuNome-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/seu-perfil)](www.linkedin.com/in/josé-eduardo-cardoso-webhaker)
-[![GitHub Badge](https://img.shields.io/badge/-SeuNome-black?style=flat-square&logo=github&logoColor=white&link=https://github.com/seu-usuario)]([https://github.com/seu-usuario](https://github.com/J-Edu-Cardoso))
+[![Linkedin Badge](https://img.shields.io/badge/-Eduardo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/seu-perfil)](www.linkedin.com/in/josé-eduardo-cardoso-webhaker)
+
+[![GitHub Badge](https://img.shields.io/badge/-EduCard-black?style=flat-square&logo=github&logoColor=white&link=https://github.com/seu-usuario)]([https://github.com/seu-usuario](https://github.com/J-Edu-Cardoso))
 
 ---
 
@@ -27,7 +28,7 @@ Tenho habilidades em desenvolvimento Full Stack, com um pouco mais de prática n
 
 | Projeto          | Descrição                                   | Tecnologias                    |
 |------------------|---------------------------------------------|--------------------------------|
-| [Projeto A](https://github.com/seu-usuario/projeto-a) | Aplicação web simples que resolve [descrição do problema] | React, Node.js, SQL            |
+| [Projeto A]([https://github.com/seu-usuario/projeto-a](https://github.com/J-Edu-Cardoso/DC_Eventosvs2.0.0)) | Aplicação web simples que resolve [descrição do problema] | Angular, Node.js, SQLite            |
 | [Projeto B](https://github.com/seu-usuario/projeto-b) | Sistema de gestão para [descrição]                        | HTML, CSS, JavaScript          |
 | [Projeto C](https://github.com/seu-usuario/projeto-c) | Ferramenta para automatizar [tarefa específica]           | Python, SQL                    |
 
