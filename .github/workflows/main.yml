@@ -1,0 +1,33 @@
+name: Atualizar PRs no README
+on:
+  schedule:
+    - cron: '0 * * * *'  # Atualiza a cada hora
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checar repositório
+        uses: actions/checkout@v2
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Atualizar PRs
+        run: |
+          # Comando para coletar PRs e inserir no README.md
+          # Pode usar um script ou uma API para atualizar a seção de PRs do README
+
+      - name: Comitar e enviar
+        run: |
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m 'Atualiza PRs no README'
+          git push
