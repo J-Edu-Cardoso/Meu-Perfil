@@ -21,7 +21,6 @@ Tenho habilidades em desenvolvimento Full Stack, com um pouco mais de prática n
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![ocker](http://www.w3.org/2000/svg)
 
 ---
 
