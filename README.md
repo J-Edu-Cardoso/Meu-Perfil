@@ -1,10 +1,11 @@
+
 # 👋 Olá, eu sou Eduardo Cardoso!
 
 ### 🎓 Estudante de Análise e Desenvolvimento de Sistemas | 4º Período - Newton Paiva
 
-Sou estudante entusiasta de tecnologia e desenvolvimento de software, com foco em Full Stack e uma boa base em SQL e Python. Gosto de aprender e aplicar novas tecnologias para criar soluções que simplificam a vida das pessoas e proporcionam uma ótima experiência de usuário. Fique à vontade para explorar meus projetos e ver o que estou a construir!
+Sou José Eduardo, mais conhecido como "cadu" sou estudante entusiasta de tecnologia e desenvolvimento de software, com foco em DevOps e MltCloud & IA.  Gosto de aprender e aplicar novas tecnologias para criar soluções que simplificam a vida das pessoas e proporcionam uma ótima experiência de usuário. Fique à vontade para explorar meus projetos e ver o que estou a construir!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Eduardo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/seu-perfil)](www.linkedin.com/in/josé-eduardo-cardoso-webhaker)
+[![Linkedin Badge](https://img.shields.io/badge/-Eduardo-blue?style=flat-square&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/seu-perfil)](https://www.linkedin.com/in/jos%C3%A9-eduardo-cardoso-webhaker)
 
 [![GitHub Badge](https://img.shields.io/badge/-EduCard-black?style=flat-square&logo=github&logoColor=white&link=https://github.com/seu-usuario)]([https://github.com/seu-usuario](https://github.com/J-Edu-Cardoso))
 
@@ -14,13 +15,8 @@ Sou estudante entusiasta de tecnologia e desenvolvimento de software, com foco e
 
 Tenho habilidades em desenvolvimento Full Stack, com um pouco mais de prática no front-end. Além disso, tenho experiência em SQL e Python. Abaixo estão algumas das tecnologias que uso:
 
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+ ![Docker](https://img.shields.io/badge/-Docker-3776AB?style=flat&logo=docker&logoColor=white)  ![Kubernetes](https://img.shields.io/badge/-Kubernetes-3776AB?style=flat&logo=kubernetes&logoColor=white)  ![Terrraform](https://img.shields.io/badge/-Terraform-3776AB?style=flat&logo=terraform&logoColor=white) 
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
 
 ---
 
