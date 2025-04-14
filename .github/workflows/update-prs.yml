@@ -1,0 +1,140 @@
+name: Atualizar PRs no README
+on:
+  schedule:
+    - cron: '0 * * * *'  # Atualiza a cada hora
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Permissão explícita para modificar o conteúdo do repositório
+    
+    steps:
+      - name: Checar repositório
+        uses: actions/checkout@v3
+      
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      
+      - name: Criar diretório de scripts se não existir
+        run: mkdir -p .github/scripts
+      
+      - name: Criar script de atualização
+        run: |
+          cat > .github/scripts/update-prs.js << 'EOL'
+          const fs = require('fs');
+          const https = require('https');
+
+          // Configuração
+          const owner = 'J-Edu-Cardoso';
+          const repo = 'Agents-101-AI-Hackathon';
+          const readmePath = 'README.md';
+
+          function fetchGitHubAPI(path) {
+            return new Promise((resolve, reject) => {
+              const options = {
+                hostname: 'api.github.com',
+                path: path,
+                method: 'GET',
+                headers: {
+                  'User-Agent': 'GitHub-PR-Updater',
+                  'Authorization': `token ${process.env.GITHUB_TOKEN}`,
+                  'Accept': 'application/vnd.github.v3+json'
+                }
+              };
+
+              const req = https.request(options, (res) => {
+                let data = '';
+                res.on('data', (chunk) => {
+                  data += chunk;
+                });
+                res.on('end', () => {
+                  if (res.statusCode === 200) {
+                    resolve(JSON.parse(data));
+                  } else {
+                    reject(new Error(`API request failed with status code ${res.statusCode}: ${data}`));
+                  }
+                });
+              });
+
+              req.on('error', (error) => {
+                reject(error);
+              });
+
+              req.end();
+            });
+          }
+
+          async function main() {
+            try {
+              console.log('Buscando PRs abertos...');
+              const prs = await fetchGitHubAPI(`/repos/${owner}/${repo}/pulls?state=open`);
+              
+              console.log(`Encontrados ${prs.length} PRs abertos.`);
+              
+              // Criando o README se não existir
+              if (!fs.existsSync(readmePath)) {
+                fs.writeFileSync(readmePath, '# ' + repo + '\n\n');
+              }
+              
+              // Lendo o README atual
+              const readme = fs.readFileSync(readmePath, 'utf8');
+              
+              // Criando a nova seção de PRs
+              let prSection = '## Pull Requests em Aberto\n\n';
+              
+              if (prs.length === 0) {
+                prSection += 'Não há PRs abertos no momento.\n';
+              } else {
+                prs.forEach(pr => {
+                  prSection += `- [#${pr.number}: ${pr.title}](${pr.html_url}) por [@${pr.user.login}](${pr.user.html_url})\n`;
+                });
+              }
+              
+              // Atualizando o README
+              let newReadme;
+              if (readme.includes('## Pull Requests em Aberto')) {
+                // Substitui a seção existente
+                newReadme = readme.replace(
+                  /## Pull Requests em Aberto[\s\S]*?(?=\n##|$)/,
+                  prSection
+                );
+              } else {
+                // Adiciona a seção no final
+                newReadme = readme + '\n\n' + prSection;
+              }
+              
+              // Salva o README atualizado
+              fs.writeFileSync(readmePath, newReadme);
+              console.log('README atualizado com sucesso!');
+              
+            } catch (error) {
+              console.error('Erro ao atualizar README:', error);
+              process.exit(1);
+            }
+          }
+
+          main();
+          EOL
+      
+      - name: Executar script de atualização
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/update-prs.js
+      
+      - name: Verificar alterações
+        id: check_changes
+        run: |
+          git diff --exit-code README.md || echo "::set-output name=changed::true"
+      
+      - name: Comitar e enviar (se houver alterações)
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m 'Atualiza PRs no README'
+          git push
