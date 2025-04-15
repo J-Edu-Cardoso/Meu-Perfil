@@ -49,3 +49,8 @@ Se quiser trocar ideias, colaborar em projetos, ou discutir oportunidades, será
 ---
 
 *Nota:* Este perfil foi configurado para incluir automação e exibir os PRs mais recentes usando GitHub Actions.
+
+
+## Pull Requests em Aberto
+
+Não há PRs abertos no momento.
