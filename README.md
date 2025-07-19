@@ -47,9 +47,9 @@ Sinta-se à vontade para explorar meus projetos e acompanhar minha jornada!
 
 | Projeto | Descrição | Tecnologias |
 |---------|-----------|--------------|
-| [**DCEventos**](https://github.com/J-Edu-Cardoso/DC_Eventosvs2.0.0) | Agenda de eventos ou Rede Social para palestras e bootcamps | Angular 12, Node.js, SQLite |
-| [**LookHostels**](https://github.com/J-Edu-Cardoso/LookHostels) | Catálogo de Hostels e Hospedagens | HTML, JavaScript, CSS, C# |
-| [**Cotação de Moedas**](https://github.com/J-Edu-Cardoso/taxa-cambio-master) | Ferramenta para automatizar Taxas de Câmbio | Python, PHP, SQL |
+| [**Agentes de Voz Grava no Mongo por comando de Voz**]([https://github.com/J-Edu-Cardoso/DC_Eventosvs2.0.0](https://github.com/J-Edu-Cardoso/Agentes-de-Voz-Grava-no-Mongo-por-comando-de-Voz)) | Agenda de eventos ou Rede Social para palestras e bootcamps | Angular 12, Node.js, SQLite |
+| [**projeto mundo invertido**]([[https://github.com/J-Edu-Cardoso/LookHostels](https://github.com/J-Edu-Cardoso/App-Finance-Hub](https://github.com/J-Edu-Cardoso/deploy-aws-ec2-projeto-mundo-invertido))) | Catálogo de Hostels e Hospedagens | HTML, JavaScript, CSS, C# |
+| [**taxa cambio master**](https://github.com/J-Edu-Cardoso/taxa-cambio-master) | Ferramenta para automatizar Taxas de Câmbio | Python, PHP, SQL |
 
 ---
 
